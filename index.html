@@ -27,50 +27,53 @@
                         many more</span></p>
                 <div class="d-flex flex-column">
                     <label class="fs-20 fw-medium pb-2" for="name ">Full Name <span class="text-danger">*</span></label>
-                    <div class="d-flex input-group gap-2 align-items-center"><svg width="16" height="20"
-                            viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <div class="d-flex input-group gap-2 align-items-center">
+                        <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M8 13.1739C12.3386 13.1739 16 13.8789 16 16.599C16 19.32 12.3146 20 8 20C3.66237 20 0 19.295 0 16.575C0 13.8539 3.68538 13.1739 8 13.1739ZM8 0C10.9391 0 13.294 2.35402 13.294 5.29105C13.294 8.22808 10.9391 10.5831 8 10.5831C5.0619 10.5831 2.70601 8.22808 2.70601 5.29105C2.70601 2.35402 5.0619 0 8 0Z"
                                 fill="#626262" />
                         </svg>
                         <input type="text" id="name">
                     </div>
+                    <div id="name-error" class="text-danger"></div>
                 </div>
                 <div class="d-flex flex-column pt-4 mt-2">
-                    <label class="fs-20 fw-medium pb-2
-                    " for="email ">Email <span class="text-danger">*</span></label>
-                    <div class="d-flex input-group gap-2 align-items-center"><svg width="24" height="24"
-                            viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <label class="fs-20 fw-medium pb-2" for="email ">Email <span class="text-danger">*</span></label>
+                    <div class="d-flex input-group gap-2 align-items-center">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M16.9395 3C18.2805 3 19.5705 3.53 20.5195 4.481C21.4695 5.43 22.0005 6.71 22.0005 8.05V15.95C22.0005 18.74 19.7305 21 16.9395 21H7.06049C4.26949 21 2.00049 18.74 2.00049 15.95V8.05C2.00049 5.26 4.25949 3 7.06049 3H16.9395ZM18.0705 8.2C17.8605 8.189 17.6605 8.26 17.5095 8.4L13.0005 12C12.4205 12.481 11.5895 12.481 11.0005 12L6.50049 8.4C6.18949 8.17 5.75949 8.2 5.50049 8.47C5.23049 8.74 5.20049 9.17 5.42949 9.47L5.56049 9.6L10.1105 13.15C10.6705 13.59 11.3495 13.83 12.0605 13.83C12.7695 13.83 13.4605 13.59 14.0195 13.15L18.5305 9.54L18.6105 9.46C18.8495 9.17 18.8495 8.75 18.5995 8.46C18.4605 8.311 18.2695 8.22 18.0705 8.2Z"
                                 fill="#626262" />
                         </svg>
                         <input id="email" type="email">
                     </div>
+                    <div id="email-error" class="text-danger"></div>
                 </div>
                 <div class="d-flex flex-column pt-4 mt-2">
-                    <label class="fs-20 fw-medium pb-2
-                    " for="password ">Password <span class="text-danger">*</span></label>
-                    <div class="d-flex input-group gap-2 align-items-center"><svg width="24" height="24"
-                            viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <label class="fs-20 fw-medium pb-2" for="password ">Password <span
+                            class="text-danger">*</span></label>
+                    <div class="d-flex input-group gap-2 align-items-center">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M11.9848 2C15.0535 2 17.5227 4.41479 17.5227 7.39601V8.92935C19.2451 9.46696 20.5 11.0261 20.5 12.8884V17.8253C20.5 20.1308 18.5886 22 16.2322 22H7.7688C5.41136 22 3.5 20.1308 3.5 17.8253V12.8884C3.5 11.0261 4.75595 9.46696 6.47729 8.92935V7.39601C6.48745 4.41479 8.95667 2 11.9848 2ZM11.9949 13.3843C11.5072 13.3843 11.1109 13.7718 11.1109 14.2488V16.4549C11.1109 16.9419 11.5072 17.3294 11.9949 17.3294C12.4928 17.3294 12.8891 16.9419 12.8891 16.4549V14.2488C12.8891 13.7718 12.4928 13.3843 11.9949 13.3843ZM12.0051 3.73904C9.94232 3.73904 8.26569 5.36878 8.25553 7.37613V8.7137H15.7445V7.39601C15.7445 5.37871 14.0678 3.73904 12.0051 3.73904Z"
                                 fill="#626262" />
                         </svg>
                         <input id="password" type="password">
                     </div>
+                    <div id="password-error" class="text-danger"></div>
                 </div>
                 <div class="d-flex flex-column pt-4 mt-2">
-                    <label class="fs-20 fw-medium pb-2
-                    " for="password "> Confirm Password <span class="text-danger">*</span></label>
-                    <div class="d-flex input-group gap-2 align-items-center"><svg width="24" height="24"
-                            viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <label class="fs-20 fw-medium pb-2" for="confirm-password ">Confirm Password <span
+                            class="text-danger">*</span></label>
+                    <div class="d-flex input-group gap-2 align-items-center">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M11.9848 2C15.0535 2 17.5227 4.41479 17.5227 7.39601V8.92935C19.2451 9.46696 20.5 11.0261 20.5 12.8884V17.8253C20.5 20.1308 18.5886 22 16.2322 22H7.7688C5.41136 22 3.5 20.1308 3.5 17.8253V12.8884C3.5 11.0261 4.75595 9.46696 6.47729 8.92935V7.39601C6.48745 4.41479 8.95667 2 11.9848 2ZM11.9949 13.3843C11.5072 13.3843 11.1109 13.7718 11.1109 14.2488V16.4549C11.1109 16.9419 11.5072 17.3294 11.9949 17.3294C12.4928 17.3294 12.8891 16.9419 12.8891 16.4549V14.2488C12.8891 13.7718 12.4928 13.3843 11.9949 13.3843ZM12.0051 3.73904C9.94232 3.73904 8.26569 5.36878 8.25553 7.37613V8.7137H15.7445V7.39601C15.7445 5.37871 14.0678 3.73904 12.0051 3.73904Z"
                                 fill="#626262" />
                         </svg>
                         <input id="confirm-password" type="password">
                     </div>
+                    <div id="confirm-password-error" class="text-danger"></div>
                 </div>
                 <button type="submit" class="p-btn">Sign Up</button>
             </div>
@@ -81,53 +84,62 @@
 
     <script>
         function validateForm(event) {
-            event.preventDefault(); //
+            event.preventDefault();
 
             var fullName = document.getElementById("name").value;
             var email = document.getElementById("email").value;
             var password = document.getElementById("password").value;
             var confirmPassword = document.getElementById("confirm-password").value;
 
+            var isValid = true;
+
+            document.getElementById("name-error").textContent = "";
+            document.getElementById("email-error").textContent = "";
+            document.getElementById("password-error").textContent = "";
+            document.getElementById("confirm-password-error").textContent = "";
+
             if (fullName === "") {
-                alert("Please enter your full name.");
-                return false;
+                document.getElementById("name-error").textContent = "Please enter your full name.";
+                isValid = false;
             }
 
             var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             if (!emailRegex.test(email)) {
-                alert("Please enter a valid email address.");
-                return false;
+                document.getElementById("email-error").textContent = "Please enter a valid email address.";
+                isValid = false;
             }
 
             var passwordRegex = /^(?=.*[!@#$%^&*(),.?":{}|<>])(?=.*\d)(?=.*[A-Z]).{8,}$/;
             if (!passwordRegex.test(password)) {
-                alert("Password must contain at least one special character, one number, one capital letter, and be at least 8 characters long.");
-                return false;
+                document.getElementById("password-error").textContent = "Password must contain at least one special character, one number, one capital letter, and be at least 8 characters long.";
+                isValid = false;
             }
 
             if (confirmPassword === "") {
-                alert("Please confirm your password.");
-                return false;
+                document.getElementById("confirm-password-error").textContent = "Please confirm your password.";
+                isValid = false;
             }
 
             if (password !== confirmPassword) {
-                alert("Passwords do not match. Please try again.");
-                return false;
+                document.getElementById("confirm-password-error").textContent = "Passwords do not match. Please try again.";
+                isValid = false;
             }
 
-            // Print data to console
-            console.log("Full Name: " + fullName);
-            console.log("Email: " + email);
-            console.log("Password: " + password);
-            console.log("Confirm Password: " + confirmPassword);
+            if (isValid) {
+                console.log("Full Name: " + fullName);
+                console.log("Email: " + email);
+                console.log("Password: " + password);
+                console.log("Confirm Password: " + confirmPassword);
 
-            alert("Form submitted successfully.");
+                alert("Form submitted successfully.");
 
-            document.getElementById("name").value = "";
-            document.getElementById("email").value = "";
-            document.getElementById("password").value = "";
-            document.getElementById("confirm-password").value = "";
-            return true;
+                document.getElementById("name").value = "";
+                document.getElementById("email").value = "";
+                document.getElementById("password").value = "";
+                document.getElementById("confirm-password").value = "";
+            }
+
+            return isValid;
         }
     </script>
     <lottie-player class="mx-auto" src="./assets/LottieAnimation.json" background="transparent" speed="1"
